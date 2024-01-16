@@ -1,0 +1,73 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.chip-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.chip-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 3px solid#00b3ff;
+    padding: 8px;
+    border-radius: 4px;
+
+    .chip {
+        display: flex;
+        align-items: center;
+        background-color: #e0e0e0;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-right: 4px;
+        font-size: 18px;
+
+        .delete-icon {
+            margin-left: 4px;
+            cursor: pointer;
+        }
+    }
+
+    input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+}
+
+.text {
+    border: none;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    li {
+        padding: 8px;
+        cursor: pointer;
+        white-space: wrap;
+     font-weight: 700;
+        .icon {
+            margin-right: 10px;
+        }
+
+        .email {
+            color: #ccc;
+            margin-left: 10px;
+        }
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+    }
+}
